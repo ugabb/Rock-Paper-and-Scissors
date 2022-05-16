@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
+:root{
+}
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -13,7 +16,7 @@ body{
 
 section{
     height: 100vh;
-    background-color: rgb(39,41,68);
+    background-color: #8F87A1;
 }
 
 .score{
@@ -45,7 +48,7 @@ section{
 }
 
 .intro h1{
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .intro button, .match button{
@@ -54,9 +57,13 @@ section{
     background: none;
     color: white;
     font-size: 20px;
-    background:rgb(45, 117, 96) ;
+    background:#80ED91 ;
     border-radius: 3px;
     border: none;
+}
+
+.intro button:hover{
+    background:#80EDDC ;
 }
 
 .match{
@@ -81,6 +88,15 @@ section{
 
 .options button{
     cursor: pointer;
+    margin: 5px;
+}
+
+.options button:hover{
+    background:#427970 ;
+}
+
+.options{
+    margin: 20px;
 }
 
 .player-hand{
@@ -100,6 +116,10 @@ div.fadeOut{
 div.fadeIn{
     opacity: 1;
     pointer-events: all;
+}
+
+i{
+    color: #ebbf8f;
 }
 
 @keyframes shakePlayer{
